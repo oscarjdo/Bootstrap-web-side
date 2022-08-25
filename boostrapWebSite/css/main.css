@@ -1,0 +1,171 @@
+/* GENERAL */
+
+.put-shadow{
+    text-shadow: 0 1px 5px black;
+}
+
+.put-soft-shadow{
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.383);
+}
+
+h1,h2,h3,h4,h5,h6,button,.amiibo-name{
+    font-family: 'Bitter', sans-serif;
+}
+
+/* NAVBAR */
+
+@media (min-width: 992px){
+    a.nav-link:hover{
+        transition: all .3s;
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
+    }
+    
+    .last-btn{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;    
+    }
+
+    .first-btn{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;    
+    }
+
+    li.nav-item{
+        border-right: 1px solid white;
+    }
+
+    li.nav-item:last-child{
+        border-right: none;
+    }
+}
+
+@media (max-width: 992px) {
+    a.nav-link{
+        border: none;
+        border-bottom: 1px solid white;
+    }
+    a.nav-link:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* RIBBON */
+
+#ribbon {
+    height: 200px;
+    background-image: repeating-linear-gradient(-45deg, transparent 0 20px, rgba(80, 0, 0, 0.342) 10px 40px);
+}
+
+#ribbon-item {
+    background-color: rgb(209, 31, 31);
+    position: relative;
+    height: 210px;
+    margin-top: -10px;
+}
+
+.logo-ribbon{
+    position: relative;
+    margin-top: -30px;
+}
+
+
+/* SEPARATOR AMIIBO */
+
+#separator-ribbon{
+    width: 100%;
+    overflow: hidden;
+}
+
+#separator-ribbon .content{
+    width: 150%;
+    height: 100px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/* GAMES SECTION */
+
+.background-div{
+    height: 100%;
+    background-image: url(../img/bg-02.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: relative;
+    z-index: -2;
+}
+
+#games-section{
+    background-image: linear-gradient(to bottom, #08bccc, transparent);
+    margin-top: -3.6%;
+    position: relative;
+    z-index: -1;
+}
+
+@media (min-width: 576px) {
+    #container-games{
+       width: 75%;
+    }
+}
+
+body{
+    position: relative;
+    z-index: 1;
+}
+
+/* SEPARATOR AMIIBO 2 */
+
+#separator-ribbon2{
+    position: relative;
+    margin-bottom: -2px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#separator-ribbon2 .content2{
+    background-image: url(../img/bg-03.png);
+    width: 150%;
+    height: 100px;
+    margin-left: -25%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+/* AMIIBO CATALOG */
+
+.bg-container{
+    background-image: url(../img/bg-03.png);
+}
+
+.amiibo:hover{
+    transition: transform .2s;
+    transform: scale(1.05);
+}
+
+.amiibo-name{
+    background-color: #0006;
+    display: inline-block;
+    border-radius: 15px;
+    margin: auto;
+}
+
+@media (min-width: 992px) {
+    .bg-garden{
+        margin-top: -60px;
+    }
+}
+
+/* PLAY NINTENDO */
+#play{
+    background-color: rgba(255, 241, 223, 0.772);
+    background-image: url(../img/bg-04.png);
+    background-size: 40px 40px;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgba(255, 124, 1, 0.845);
+    background-image: url(../img/bg-04.png);
+    background-size: 50px 50px;
+}
